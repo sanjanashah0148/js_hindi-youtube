@@ -1,17 +1,19 @@
-//fetch('https://somthjing.com').then().catch().finally()
-//promises are object representing the evntual completion or failure of asynchronous operation
+ //fetch('https://somthjing.com').then().catch().finally()
+//promises are object representing the eventual completion or failure of asynchronous operation
+//most of the time we consume promises rather than making them
+//queue and bluebird are two library,pehle promises are not easily available then we use them now it is updated hence we do not need to implement them
 const promiseOne=new Promise(function(resolve,reject){
 //do async task
-//DB calls,cryptography,network
-setTimeout(function(){
+//async tasks are-DB calls,cryptography,network
+setTimeout(function(){//setTime out se ek function hoga jo ek particular time ke baad execute hoga
     console.log('Async task is complete');
-    resolve()
+    resolve()//to connect resolve and then
     
 
 },1000)
 
 })
-promiseOne.then(function(){
+promiseOne.then(function(){//then ka seedha connection hai resolve ke saath
     console.log("Promise Consumed");
     
 })
@@ -23,6 +25,8 @@ new Promise(function(resolve,reject){
         
         
     }, 1000);
+
+
 }).then(function(){
     console.log("Async 2 resolved");
     
@@ -90,22 +94,22 @@ async function consumePromiseFive(){
 
 
 }
-
+//async aur await ka ye problem hai ki vo directly error handle nhi kr sakte hai
 consumePromiseFive()
 
-// async function getAllUser(){
-//     try{
-//         const response=await fetch('https://jsonplaceholder.typicode.com/users')
-//         const data=await response.jspn()
-//         console.log(data);
+ async function getAllUser(){
+     try{
+         const response=await fetch('https://jsonplaceholder.typicode.com/users')
+         const data=await response.json()
+         console.log(data);
     
-//     }catch(error){
-//         console.log("E: ",error)
-//     }
+     }catch(error){
+         console.log("E: ",error)
+     }
     
-// }
+ }
 
-// getAllUsers()
+ //getAllUsers()
 
 fetch('https://jsonplaceholder.typicode.com/users')
 .then((response)=>{
@@ -115,3 +119,5 @@ fetch('https://jsonplaceholder.typicode.com/users')
     console.log(data);
 })
 .catch((error)=>console.log(error))
+
+//fetch is a fetching resource from the network and returning a promise which is fulfilled once the response is available

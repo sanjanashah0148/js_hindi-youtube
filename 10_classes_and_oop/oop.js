@@ -1,17 +1,17 @@
-// const User={
-//     username:"Sanjana",
-//     loginCount:true,
-//     SignedIn:true,
-//     getUserdetails:function(){
-//         //console.log("Got user deatils from database");
-//         // console.log(`Username:${this.username}`);
-//         console.log(this);
+ const User={
+     username:"Sanjana",
+     loginCount:8,
+     SignedIn:true,
+     getUserdetails:function(){
+         console.log("Got user deatils from database");
+         console.log(`Username:${this.username}`);
+         console.log(this);
 
-//     }
+    }
 
-// }
-// console.log(User.username);
-// console.log(User.getUserdetails());
+ }
+ console.log(User.username);
+ console.log(User.getUserdetails());
 
 function User(Username,loginCount,isLoggedIn){
     this.username=Username;
@@ -38,3 +38,4 @@ console.log(userOne);
 
 
 //constructor function is refernce abt khud ki property
+//contructor function har baar ek anaya keyword deta hai

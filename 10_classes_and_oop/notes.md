@@ -1,11 +1,13 @@
 #javascript and classes
 <!-- #does javscript has classes-js is prototype based language,it actually does not have any kind of classes -->
+//classes are primarily syntactic sugar over existing prototype-based language
+ 
 ##OOP
 #object
 -collection of properties and methods
--to lower case
+-toLowerCase
 
-##why use OOP
+##why use OOP?
 
 ##parts of OOP
 object literal{}
@@ -15,7 +17,7 @@ object literal{}
 -Instances(new,this)
 
 ##4 pillars
-Abstraction
-Encapsulation
+Abstraction-matlab deatils hide kar lena
+Encapsulation-data ko wrap up kar dia
 Inheritence
-Polymorphism
+Polymorphism-ek hi method bhot sarre kaam kar deta hai
