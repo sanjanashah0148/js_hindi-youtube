@@ -1,63 +1,63 @@
 // let myName="sanjana   "
-// console.log(myName.truelength);
+// console.log(myName.trim().length);
 // console.log(myName.truelength)
 
 
 let myHero=["thor","spiderman"]
-let heropower ={
-    thor:"hammer",
-    spidermaan:"sling",
+ let heropower ={
+     thor:"hammer",
+     spidermaan:"sling",
 
-    getSpiderPower:function(){
-        console.log(`spidy power is ${this.spiderman}`);
+     getSpiderPower:function(){
+         console.log(`spidy power is ${this.spiderman}`);
         
-    }
-}
-Object.prototype.sanjana=function(){
-    console.log(`sanjana is present in all objects`);
-}
-Array.prototype.heysanjana=function(){
-    console.log(`Sanjana says hello`);
-}
-// myheros.sanjana()
-//heropower.sanjana()
+     }
+ }
+ Object.prototype.sanjana=function(){
+     console.log(`sanjana is present in all objects`);
+ }
+ Array.prototype.heysanjana=function(){
+     console.log(`Sanjana says hello`);
+ }
+ myHero.sanjana()
+ //heropower.heysanjana()
 
-// heropower.heysanjana()
-myHero.heysanjana()
+// // heropower.heysanjana()
+// myHero.heysanjana()
 
-const User={
-    name:"Chaiaiai"
-}
+ const User={
+     name:"Chaiaiai"
+ }
 
-const Teacher={
-    makeVideo:true
-}
+ const Teacher={
+     makeVideo:true
+ }
 
-const TeachingSupport={
-    isAvailable:false
-}
+ const TeachingSupport={
+     isAvailable:false
+ }
 
-const TASupport={
-    makeAssignment:'JS assignment',
-    fullTime:true,
-    __proto__:TeachingSupport
-}
+ const TASupport={
+     makeAssignment:'JS assignment',
+     fullTime:true,
+     __proto__:TeachingSupport
+ }
 
-Teacher.__proto__=User
+ Teacher.__proto__=User//this proto is a property
 
-//modern Syntax
-Object.setPrototypeOf(TeachingSupport,Teacher);
+ //modern Syntax
+ Object.setPrototypeOf(TeachingSupport,Teacher);//this is prototype inheritence
 
-let anotherUsername="ChaiaurCode"
+ let anotherUsername="ChaiaurCode"
 
-String.prototype.trueLength=function(){
-    console.log(`${this .name}`);
-    console.log(`${this.name}`);
-    console.log(`True length is ${this.trim().length}`);
+ String.prototype.trueLength=function(){
+     console.log(`${this}`);
+     console.log(`${this.name}`);
+     console.log(`True length is ${this.trim().length}`);
 
     
-}
+ }
 
-anotherUsername.trueLength()
-"Sanjana".trueLength()
-"iceTea".trueLength()
+ anotherUsername.trueLength()
+ "Sanjana".trueLength()
+ "iceTea".trueLength()
