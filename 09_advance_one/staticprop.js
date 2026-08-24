@@ -5,7 +5,7 @@ class User{
     logMe(){
         console.log(`username:${this.username}`);
     }
-    static createID(){
+    static createID(){//uss method ya property ko access hine se rom deta hai
         return `123`
     }
 }
