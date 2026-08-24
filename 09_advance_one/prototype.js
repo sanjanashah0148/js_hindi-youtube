@@ -51,7 +51,7 @@ let myHero=["thor","spiderman"]
  let anotherUsername="ChaiaurCode"
 
  String.prototype.trueLength=function(){
-     console.log(`${this}`);
+     console.log(`${thisc}`);
      console.log(`${this.name}`);
      console.log(`True length is ${this.trim().length}`);
 
